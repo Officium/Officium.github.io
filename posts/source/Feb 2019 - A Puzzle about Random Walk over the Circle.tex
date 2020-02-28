@@ -1,0 +1,31 @@
+\documentclass[a4paper,11pt]{article}
+
+\input{commands.tex}
+
+\begin{document}
+\title{A Puzzle about Random Walk over the Circle}
+\author{Yanhua Huang}
+\date{Feb 2019}
+\maketitle
+
+Consider a particle that moves along a set of $m + 1$ nodes, labeled $0, 1, . . . , m$, that are arranged around a circle. At each step the particle is equally likely to move one position in either the clockwise or counterclockwise direction. Suppose now that the particle starts at 0 and continues to move around according to the preceding rules until all the nodes have been visited. What is the probability that node $i$ is the last one visited?
+
+Let us first define two event.
+Event $A_i$: node i is visted at the last.
+Event $A_{i-1,i+1}$: node $i-1$ is visited before node $i+1$.
+It is obvious that 
+\begin{equation}
+P(A_{i-1,i+1}) + P(A_{i+1,i-1}) = 1
+\end{equation}
+and 
+\begin{equation}
+P(A_i|A_{i-1,i+1}) = P(A_i|A_{i+1,i-1}) := c.
+\end{equation}
+Furthermore, with the Bayes' formula, 
+\begin{equation}
+P(A_i) = P(A_{i-1,i+1}) * P(A_i|A_{i-1,i+1}) + P(A_{i+1,i-1}) * P(A_i|A_{i+1,i-1}),
+\end{equation}
+so $P(A_i) = c$ for any $i = 1, . . . , m$ or $P(A_i) = \frac{1}{m}$.
+
+
+\end{document}

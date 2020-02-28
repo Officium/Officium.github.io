@@ -1,0 +1,36 @@
+\documentclass[a4paper,11pt]{article}
+
+\input{commands.tex}
+
+\begin{document}
+\title{A Puzzle about Random Connection}
+\author{Yanhua Huang}
+\date{Nov 2016}
+\maketitle
+
+Given an undirected graph containing $n$ $(n > 2)$ nodes, the probability that arbitrary pairs of nodes are connected by an edge is $p$. Given two nodes randomly, what is the probability that there exists a path between them?
+
+
+\begin{lemma}
+For any undirected graph which contains $m$ nodes and the probability that arbitrary pair of nodes are connected by an edge is $p$, the probability that the graph is connected is 
+\begin{equation}
+f(m) = 1 - \sum_{i=1}^{m-1}C_{m-1}^{i-1}f(i)(1 - p) ^ {i(n-i)}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The graph may have many connected components. For arbitrary node $v$, the probability that the size of components that $v$ belongs to is $i$ is 
+\begin{equation}
+g(i) = C_{n-1}^{i-1}f(i)(1 - p)^{i(n-i)} .
+\end{equation}
+We can get the proof based on $\sum_{i=1}^{n}g(i) = 1$.
+\end{proof}
+
+
+There exists $C_{i}^2$ paths in a connected components, so the answer is
+\begin{equation}
+\frac{1}{C_{n}^{2}}\sum_{i=1}^{n}C_{i}^{2}f(i).
+\end{equation}
+
+
+\end{document}

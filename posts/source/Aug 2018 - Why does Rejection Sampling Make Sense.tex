@@ -1,0 +1,29 @@
+\documentclass[a4paper,11pt]{article}
+
+\input{commands.tex}
+
+\begin{document}
+\title{Why does Rejection Sampling Make Sense?}
+\author{Yanhua Huang}
+\date{Aug 2018}
+\maketitle
+
+Rejection sampling is a basic sampling method when the CDF is unknown. Given random variable $X$ with PDF $p(x)$, pick the sampling density $q$. Let $M=\sup \frac{p}{q}$. The accept rate is 
+
+\begin{equation}
+P(u < \frac{p}{Mq}) = \mathbb{E}[\frac{p}{Mq}] = \int q\frac{p}{Mq} = \frac{1}{M},
+\end{equation}
+
+where $u \sim U(0, 1)$. Consider the CDF of $X$,
+
+\begin{align}
+P(X \le x) &= P(Y \le x | u < \frac{p(Y)}{Mq(Y)}) \\
+           &= MP(Y \le x, u < \frac{p(Y)}{Mq(Y)}) \\
+           &= M\int q(y)P(Y \le x, u < \frac{p(Y)}{Mq(Y)} | Y = y)dy \\
+           &= M\int q(y)P(y \le x, u < \frac{p(y)}{Mq(y)})dy \\
+           &= M\int q(y)I(y \le x) P(u < \frac{p(y)}{Mq(y)})dy \\
+           &= M\int_{-\infty}^{x} q(y)\frac{p(y)}{Mq(y)}dy \\
+           &= \int_{-\infty}^{x} p(y)dy.
+\end{align}
+
+\end{document}

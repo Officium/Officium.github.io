@@ -1,0 +1,31 @@
+\documentclass[a4paper,11pt]{article}
+
+\input{commands.tex}
+
+\begin{document}
+\title{From Maximum Entropy to Softmax}
+\author{Yanhua Huang}
+\date{Jan 2017}
+\maketitle
+
+In this post, we will review the principle of maximum entropy, by which we can get some structural assumptions of the Softmax layer.
+
+Consider two random variables $x$ and $y$ with a collection of constraints $f_i(x, y)$, the principle of maximum entropy propose to estimate the 
+posterior probability $\hat{p}(y|x)$, such that the conditional entropy of $\hat{p}(y|x)$ with the prior $p(x)$ is maximum. Furthermore, the constraints $\mathbb{E}_{p(x, y)}[f_i] = \mathbb{E}_{\hat{p}(y|x)p(x)}[f_i]$ and $\sum_{y}{\hat{p}(y|x)} = 1$ must be satisfied.
+
+With Lagrange multipliers, we can get the following min-max problem
+\begin{equation}
+\min_{\hat{p}}\max_{\alpha_i, \beta} \mathcal{L} = \min_{\hat{p}}\max_{\alpha_i, \beta} \sum_{x,y}{p(x)\hat{p}\log{\hat{p} + \sum_{i}{\alpha_i\sum_{x,y}(\hat{p}p(x) - p(x,y))f_i}} + \beta(1 - \sum_{y}{\hat{p}})}.
+\end{equation}
+
+With the solution of its duel problem
+\begin{equation}
+\frac{\partial \mathcal{L}}{\partial \hat{p}} = \sum_{x,y}p(x)(\log\hat{p} + 1) + \sum_i{\alpha_i\sum_{x,y}{p(x)f_i}} = 0,
+\end{equation}
+we can get 
+\begin{equation}
+\hat{p}(y|x) = \frac{1}{Z}\text{exp}^{-\sum_i{\alpha_i f_i}},
+\end{equation} 
+where $Z$ is the normalization factor. It points out that the logits learned by the neural network are the linear combinations of joint constraints.
+
+\end{document}
