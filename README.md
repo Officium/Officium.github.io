@@ -21,4 +21,4 @@ Yanhua Huang is a machine learning engineer, working on large-scale machine lear
 ### Other posts
 - [Basic Data Structrues](https://github.com/Officium/Officium.github.io/blob/master/posts/pdf/Mar%202018%20-%20Basic%20Data%20Structrues.pdf)
 - [A Fast Implementation of Max-Pooling](https://github.com/Officium/Officium.github.io/blob/master/posts/pdf/Oct%202019%20-%20A%20Fast%20Implementation%20of%20Max-Pooling.pdf)
-- [A Fast Implementation of Max-Pooling](https://github.com/Officium/Officium.github.io/blob/master/posts/pdf/Mar%202020%20-%20Coding%20Methods%20in%20Text%20Compression.pdf)
+- [Coding Methods in Text Compression](https://github.com/Officium/Officium.github.io/blob/master/posts/pdf/Mar%202020%20-%20Coding%20Methods%20in%20Text%20Compression.pdf)
