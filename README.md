@@ -1,4 +1,4 @@
-Yanhua Huang is a machine learning engineer, working on large-scale machine learning and deep reinforcement learning.
+Yanhua Huang is a machine learning engineer, working on large-scale machine learning and reinforcement learning in recommender systems.
 [Github](https://github.com/Officium)
 
 
