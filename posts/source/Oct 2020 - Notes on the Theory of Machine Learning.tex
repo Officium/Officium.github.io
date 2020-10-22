@@ -1,0 +1,348 @@
+\RequirePackage{xcolor}
+\documentclass[a4paper,11pt]{article}
+
+\input{commands.tex}
+\usepackage{tikz,algorithm,algpseudocode,diagbox,filecontents}
+\usepackage[square,sort,comma,numbers]{natbib}
+\usetikzlibrary{arrows, shapes, calc, positioning}
+
+\begin{filecontents}{reference.bib}
+@article{domingos2012few,
+  title={A few useful things to know about machine learning},
+  author={Domingos, Pedro},
+  journal={Communications of the ACM},
+  volume={55},
+  number={10},
+  pages={78--87},
+  year={2012},
+  publisher={ACM New York, NY, USA}
+}
+@article{valiant1984theory,
+  title={A theory of the learnable},
+  author={Valiant, Leslie G},
+  journal={Communications of the ACM},
+  volume={27},
+  number={11},
+  pages={1134--1142},
+  year={1984},
+  publisher={ACM New York, NY, USA}
+}
+@article{kearns1994toward,
+  title={Toward efficient agnostic learning},
+  author={Kearns, Michael J and Schapire, Robert E and Sellie, Linda M},
+  journal={Machine Learning},
+  volume={17},
+  number={2-3},
+  pages={115--141},
+  year={1994},
+  publisher={Springer}
+}
+@inproceedings{schmidt2018adversarially,
+  title={Adversarially robust generalization requires more data},
+  author={Schmidt, Ludwig and Santurkar, Shibani and Tsipras, Dimitris and Talwar, Kunal and Madry, Aleksander},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={5014--5026},
+  year={2018}
+}
+@article{vapnik1971uniform,
+  title={On the Uniform Convergence of Relative Frequencies of Events to Their Probabilities},
+  author={Vapnik, VN and Chervonenkis, A Ya},
+  journal={Theory of Probability \& Its Applications},
+  volume={16},
+  number={2},
+  pages={264--280},
+  year={1971},
+  publisher={SIAM}
+}
+@article{bartlett2002rademacher,
+  title={Rademacher and Gaussian complexities: Risk bounds and structural results},
+  author={Bartlett, Peter L and Mendelson, Shahar},
+  journal={Journal of Machine Learning Research},
+  volume={3},
+  number={Nov},
+  pages={463--482},
+  year={2002}
+}
+@article{burges1998tutorial,
+  title={A tutorial on support vector machines for pattern recognition},
+  author={Burges, Christopher JC},
+  journal={Data mining and knowledge discovery},
+  volume={2},
+  number={2},
+  pages={121--167},
+  year={1998},
+  publisher={Springer}
+}
+@inproceedings{bartlett2017spectrally,
+  title={Spectrally-normalized margin bounds for neural networks},
+  author={Bartlett, Peter L and Foster, Dylan J and Telgarsky, Matus J},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={6240--6249},
+  year={2017}
+}
+@article{zhang2016understanding,
+  title={Understanding deep learning requires rethinking generalization},
+  author={Zhang, Chiyuan and Bengio, Samy and Hardt, Moritz and Recht, Benjamin and Vinyals, Oriol},
+  journal={arXiv preprint arXiv:1611.03530},
+  year={2016}
+}
+@article{arora2018stronger,
+  title={Stronger generalization bounds for deep nets via a compression approach},
+  author={Arora, Sanjeev and Ge, Rong and Neyshabur, Behnam and Zhang, Yi},
+  journal={arXiv preprint arXiv:1802.05296},
+  year={2018}
+}
+@article{neyshabur2018towards,
+  title={Towards understanding the role of over-parametrization in generalization of neural networks},
+  author={Neyshabur, Behnam and Li, Zhiyuan and Bhojanapalli, Srinadh and LeCun, Yann and Srebro, Nathan},
+  journal={arXiv preprint arXiv:1805.12076},
+  year={2018}
+}
+@article{bousquet2002stability,
+  title={Stability and generalization},
+  author={Bousquet, Olivier and Elisseeff, Andr{\'e}},
+  journal={Journal of machine learning research},
+  volume={2},
+  number={Mar},
+  pages={499--526},
+  year={2002}
+}
+@article{mukherjee2006learning,
+  title={Learning theory: stability is sufficient for generalization and necessary and sufficient for consistency of empirical risk minimization},
+  author={Mukherjee, Sayan and Niyogi, Partha and Poggio, Tomaso and Rifkin, Ryan},
+  journal={Advances in Computational Mathematics},
+  volume={25},
+  number={1-3},
+  pages={161--193},
+  year={2006},
+  publisher={Springer}
+}
+@article{goodfellow2014explaining,
+  title={Explaining and harnessing adversarial examples},
+  author={Goodfellow, Ian J and Shlens, Jonathon and Szegedy, Christian},
+  journal={arXiv preprint arXiv:1412.6572},
+  year={2014}
+}
+@inproceedings{ilyas2019adversarial,
+  title={Adversarial examples are not bugs, they are features},
+  author={Ilyas, Andrew and Santurkar, Shibani and Tsipras, Dimitris and Engstrom, Logan and Tran, Brandon and Madry, Aleksander},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={125--136},
+  year={2019}
+}
+@article{zhang2019theoretically,
+  title={Theoretically principled trade-off between robustness and accuracy},
+  author={Zhang, Hongyang and Yu, Yaodong and Jiao, Jiantao and Xing, Eric P and Ghaoui, Laurent El and Jordan, Michael I},
+  journal={arXiv preprint arXiv:1901.08573},
+  year={2019}
+}
+@article{tsipras2018robustness,
+  title={Robustness may be at odds with accuracy},
+  author={Tsipras, Dimitris and Santurkar, Shibani and Engstrom, Logan and Turner, Alexander and Madry, Aleksander},
+  journal={arXiv preprint arXiv:1805.12152},
+  year={2018}
+}
+@article{bartlett2006convexity,
+  title={Convexity, classification, and risk bounds},
+  author={Bartlett, Peter L and Jordan, Michael I and McAuliffe, Jon D},
+  journal={Journal of the American Statistical Association},
+  volume={101},
+  number={473},
+  pages={138--156},
+  year={2006},
+  publisher={Taylor \& Francis}
+}
+@inproceedings{ravikumar2011ndcg,
+  title={On NDCG consistency of listwise ranking methods},
+  author={Ravikumar, Pradeep and Tewari, Ambuj and Yang, Eunho},
+  booktitle={Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics},
+  pages={618--626},
+  year={2011}
+}
+@inproceedings{gao2015consistency,
+  title={On the Consistency of AUC Pairwise Optimization.},
+  author={Gao, Wei and Zhou, Zhi-Hua},
+  booktitle={IJCAI},
+  pages={939--945},
+  year={2015},
+  organization={Citeseer}
+}
+@inproceedings{nesterov1983method,
+  title={A method for solving the convex programming problem with convergence rate O (1/k\^{} 2)},
+  author={Nesterov, Yurii E},
+  booktitle={Dokl. akad. nauk Sssr},
+  volume={269},
+  pages={543--547},
+  year={1983}
+}
+@article{byrd2016stochastic,
+  title={A stochastic quasi-Newton method for large-scale optimization},
+  author={Byrd, Richard H and Hansen, Samantha L and Nocedal, Jorge and Singer, Yoram},
+  journal={SIAM Journal on Optimization},
+  volume={26},
+  number={2},
+  pages={1008--1031},
+  year={2016},
+  publisher={SIAM}
+}
+@inproceedings{johnson2013accelerating,
+  title={Accelerating stochastic gradient descent using predictive variance reduction},
+  author={Johnson, Rie and Zhang, Tong},
+  booktitle={Advances in neural information processing systems},
+  pages={315--323},
+  year={2013}
+}
+@inproceedings{zhao2015stochastic,
+  title={Stochastic optimization with importance sampling for regularized loss minimization},
+  author={Zhao, Peilin and Zhang, Tong},
+  booktitle={international conference on machine learning},
+  pages={1--9},
+  year={2015}
+}
+@inproceedings{needell2014stochastic,
+  title={Stochastic gradient descent, weighted sampling, and the randomized Kaczmarz algorithm},
+  author={Needell, Deanna and Ward, Rachel and Srebro, Nati},
+  booktitle={Advances in neural information processing systems},
+  pages={1017--1025},
+  year={2014}
+}
+@article{rubinstein1999cross,
+  title={The cross-entropy method for combinatorial and continuous optimization},
+  author={Rubinstein, Reuven},
+  journal={Methodology and computing in applied probability},
+  volume={1},
+  number={2},
+  pages={127--190},
+  year={1999},
+  publisher={Springer}
+}
+@inproceedings{wang2013bayesian,
+  title={Bayesian Optimization in High Dimensions via Random Embeddings.},
+  author={Wang, Ziyu and Zoghi, Masrour and Hutter, Frank and Matheson, David and De Freitas, Nando and others},
+  booktitle={IJCAI},
+  pages={1778--1784},
+  year={2013}
+}
+@inproceedings{kawaguchi2016deep,
+  title={Deep learning without poor local minima},
+  author={Kawaguchi, Kenji},
+  booktitle={Advances in neural information processing systems},
+  pages={586--594},
+  year={2016}
+}
+@inproceedings{lee2016gradient,
+  title={Gradient descent only converges to minimizers},
+  author={Lee, Jason D and Simchowitz, Max and Jordan, Michael I and Recht, Benjamin},
+  booktitle={Conference on learning theory},
+  pages={1246--1257},
+  year={2016}
+}
+\end{filecontents}
+
+\begin{document}
+\title{Notes on the Theory of Machine Learning}
+\author{Yanhua Huang}
+\date{Oct 2020}
+\maketitle
+
+This post reviews some basic machine learning theory. In particular, we discuss learnability, complexity, generalization, stability, and convergence.
+
+\section{What is Learning?}
+
+One of the essential things about machine learning is to understand what is \textbf{learning} for the computer. Following \citet{domingos2012few}, learning consists of three components: representation, evaluation and optimization.
+
+\textbf{Represetation} First of all, any learning algorithm or learned result must be in representation that the computer can handle. Generally, we expect to learn a mapping, e.g., a mapping from the input image to the desired label or a mapping from the data point to the meaningful cluster. Formally, we call the mapping as \textbf{concept}. The collection of concepts we want to learn is called \textbf{concept class}. Given a learning algorithm, the set of all possible concepts considered is called \textbf{hypotheis space}. For example, the decision tree formulates the mapping by a tree structure, and the Naive Bayes classifier assumes strong (naive) independence between the features. Given a problem, we wonder if we can learn it and how complicated is it, corresponding to the learnability (Sec.\ref{sec:Learnability}) and complexity (Sec.\ref{sec:Complexity}) in the machine learning theory.
+
+\textbf{Evaluation} Evaluation is necessary for machine learning. On the one hand, we want to achieve generalized performance beyond the training data. Sec.\ref{sec:Generalization} will analyze factors, e.g., the hypothesis space’s complexity, that may influence the generalization. On the other hand, apart from evaluations like accuracy and recall, it is also necessary to consider the robustness of the learning procedure and the learned concept, especially when facing the perturbation and attack in real-world applications. Sec.\ref{sec:Stability} will demonstrate how to measure the stability of a given learning algorithm.
+
+\textbf{Optimization} Optimization means searching in the hypothesis space to find the optimal concept corresponding to the evaluation method. Most of the optimizations in machine learning is an iterative procedure. There are three fundamental problems for the iteration. Does it converge? Where is the convergence point? What is the rate of convergence? Moreover, sometimes we optimize a surrogate objective instead of the one produced by the evaluation method, e.g., minimizing the cross-entropy loss instead of maximizing the accuracy in classification tasks. We further wonder about the consistency of the surrogate. Sec.\ref{sec:Convergence} tries to answer these questions.
+
+
+\section{Learnability}
+\label{sec:Learnability}
+
+The well-known learnability theory of machine learning is the \textbf{Probably Approximately Correct} (PAC)~\citep{valiant1984theory}. PAC provides a framework to describe that the algorithm can learn the correct concept approximately under the perspective of probability. The word "correct" considers the generalization error at the most time. Formally, a target concept class $\mathcal{C}$ is \textbf{PAC-learnable} by a hypothesis space $\mathcal{H}$ if for any concept $c \in \mathcal{C}$, any target distribution $\mathcal{D}$, and any $0 < \epsilon, \delta < 1$, dataset $D$ consisting of $m = \mathcal{O}(poly(\frac{1}{\epsilon}, \frac{1}{\delta}, \mathrm{bits}(x), \mathrm{bits}(c)))$ i.d.d. samples from $\mathcal{D}$ is sufficient for some algorithms, s.t. the produced $h \in \mathcal{H}$ satisfies $$\mathrm{Pr}[\mathcal{L}(h|D) \le \epsilon] \ge 1 - \delta,$$ where $\mathcal{L}(h|D) = \mathrm{Pr}_{x \sim D}[h(x) \neq c(x)]$. 
+
+PAC learnable means with polynomial samples, an arbitrarily small error is achievable with high probability. However, for challenging problems, it is impossible to achieve small enough error. Consequently, we consider the smallest error on the whole hypothesis space, resulting in the \textbf{agnostic PAC learnable}~\citep{kearns1994toward} by $$\mathrm{Pr}[\mathcal{L}(h|D) - \mathrm{min}_{h^\prime \in \mathcal{H}}\mathcal{L}(h^\prime|D) \le \epsilon] \ge 1 - \delta.$$ Note that the complexity of the hypothesis space influences the learnability a lot. It is straightforward to prove that every finite $\mathcal{H}$ is agnostically learnable with $m \in \mathcal{O}(\frac{1}{\epsilon^2}\ln\frac{|\mathcal{H}|}{\delta})$ by the Hoeffding inequality. For infinite hypothesis spaces, it must first know their complexity, as introduced in the next section.
+
+\section{Complexity}
+\label{sec:Complexity}
+
+For finite hypothesis space, it is natural to measure the complexity by its cardinality. This section discusses two complexity measures that can be used for any hypothesis space: the distribution-free method \textbf{Vapnik-Chervonenkis (VC) dimension}~\citep{vapnik1971uniform}, and the distribution-based method \textbf{Rademacher complexity}~\citep{bartlett2002rademacher}.
+
+The VC-dimension describes the complexity by the ability to shatter the data. Formally, denote the restriction of hypothesis space $\mathcal{H}$ on dataset $D$ is $$\mathcal{H}_D = \{h(x)|x \in D, h \in \mathcal{H}\}.$$ We say a dataset $X$ is shattered by $\mathcal{H}$ if $|H_X| = 2^{|X|}$. The VC-dimension of a hypothesis space $\mathcal{H}$ is then given by $$VC(\mathcal{H}) = \max |X|, \text{s.t. $X$ is shattered by $\mathcal{H}$}.$$ Let us consider the VC-dimension of a simple hypothesis space $$\mathcal{H}_{thr} = \{h(x) = \mathbb{I}(x > t) - \mathbb{I}(x \ge t) | t \in \mathbb{R}\}$$ for one dimensional binary classification problems. It is easy to know its VC-dimension is not less than 1. Consider $D=\{a, b\}$ with $a < b$, any concept in $\mathcal{H}_{thr}$ can't achieve $\{(a, 1), (b, -1)\}$. As a result, the VC-dimension of $\mathcal{H}_{thr}$ is 1.
+
+Another notion of complexity is the Rademacher complexity that considers the data distribution and suitable for any real-valued concept (not only concept mapping to discrete values). The Rademacher complexity is formally given by $$\mathbb{E}_\sigma[\sup_{h\in\mathcal{H}}\frac{1}{|D|} \sum_{x \in D} \sigma h(x)],$$ where $\sigma$ is random variable uniformly chosen from $\{-1, 1\}$. Intuitively, the Rademacher complexity describes a maximum achievable correlation of the hypothesis space. In discrete situations, we can view $\sigma$ as a random label, and the Rademacher complexity is the hypothesis space's ability to handle the desired input signal with random targets.
+
+There are a lot of works about analyzing the complexities of commonly used hypothesis spaces, such as the VC-dimension of SVM~\citep{burges1998tutorial} and the Rademacher complexity of neural networks~\citep{bartlett2017spectrally}. Basically, complex spaces have rich expression but are hard to generalize to the unseen data. We will discuss this topic in the next section.
+
+
+\section{Generalization}
+\label{sec:Generalization}
+
+As mentioned in the last section, complexity influences the generalization well. Commonly used methods for generalization, such as weight decay and early stopping, are all about controlling the complexity. Given the produced concept $h$ and the target concept $c$, we analyze their generalization performance by decomposing the difference as follows: $$\mathcal{L}(h) - \mathcal{L}(c) = \underbrace{\mathcal{L}(h) - \mathcal{L}(\tilde{c})}_{\text{Optimization Error}} + \underbrace{\mathcal{L}(\tilde{c}) - \mathcal{L}(h^*)}_{\text{Estimation Error}} + \underbrace{\mathcal{L}(h^*) - \mathcal{L}(c)}_{\text{Modeling Error}},$$ where $\tilde{c}$ is the optimal concept with respect to the emprical error, $h^*$ is the optimal concept in the hypothesis space with respect to the generalization error.
+
+Basically, the hypothesis space's complexity can trade off between the modeling error and the optimization error. Furthermore, the complexity also can provide an upper bound for the estimation error~\citep{vapnik1971uniform,bartlett2002rademacher}. However, many works showed that deep nets generalize well despite their high complexity. ~\citep{arora2018stronger,neyshabur2018towards,zhang2016understanding} tried to explain this phenomenon in other aspects.
+
+
+\section{Stability}
+\label{sec:Stability}
+
+In this section, we discuss another aspect of the evaluation for the learning algorithm, i.e., the stability to handle perturbations. There two perturbations commonly associated with the stability of machine learning algorithms: sample-level and feature-level perturbation. In particular, for the sample-level, we consider single sample perturbation on the training dataset, and for the feature-level, we focus on adversarial noise. 
+
+Sample-level perturbation mainly influent the training procedure. As a result, we can measure the stability as follows: $$d := \mathbb{E}_i[|\mathcal{L}(h|D) - \mathcal{L}(h|D_i)|],$$ where $D_i$ means the perturbation occurs in the $i$-th sample of the training dataset $D$. Generally, this stability is related to the data size, so we say that the learning algorithm is stable if it can achieve $\lim_{|D|\rightarrow \infty} d = 0$. \citet{bousquet2002stability} proved that commonly used learning methods, such as SVM and least squares regression, hold stability with regularization if the perturbation occurs uniformly. \citet{mukherjee2006learning} further proved that stability is sufficient for generalization under empirical risk minimization.
+
+Feature-level perturbation occurs during the inference stage. Although deep nets achieve great success in many tasks, their instability limits further applications to security-sensitive fields. Recently, a so-called adversarial attack that refers to imperceptible input changes for humans to test deep nets' stability has aroused wide attention~\citep{goodfellow2014explaining}. Formally, we consider the following risk under adversarial noise: $$\mathbb{E}[\sup_{||\xi|| < \epsilon} \mathbb{I}[h(x + \xi) \neq h(x)]],$$ where $\epsilon$ is the radius of the noise. Several works viewed this problem under the perspective of generalization and considered the robustness and the accuarcy at the same time~\citep{tsipras2018robustness,zhang2019theoretically,ilyas2019adversarial}.
+
+
+\section{Convergence}
+\label{sec:Convergence}
+In machine learning, it is common to solve an optimization problem: $$\min \mathcal{L}(\theta), \text{s.t. some conditions are satisfied},$$ where $\theta$ is the parameter of the concept, and $\mathcal{L}$ is the loss function. As mentioned before, when the evaluation objective is hard to optimize directly, we instead choose $\mathcal{L}$ to be a surrogate function with good properties for optimization. A natural question is whether learning with the surrogate loss is consistent with learning with the evaluation objective? Formally, if the surrogate loss's result converges to the one lead by the evaluation objective, we say the surrogate loss achieves consistency. \citet{bartlett2006convexity} provided sufficient and necessary conditions for consistency with accuracy. Other works further discussed the situations with AUC~\citep{gao2015consistency} and NDCG~\citep{ravikumar2011ndcg}.
+
+We then move to the convergence of the iterative procedure. Let $\theta_t$ be the output parameter in $t$-th iteration of optimization, and $\theta^*$ be the optimal parameter in the hypothesis space. We can measure the rate of convergence as follows: $$\rho := \lim_{t\rightarrow\infty} \frac{\mathcal{L}(\theta_{t+1}) - \mathcal{L}(\theta^*)}{\mathcal{L}(\theta_{t}) - \mathcal{L}(\theta^*)}.$$ If $\rho=1$, we say it achieves a sublinear rate. If $\rho \in (0, 1)$, we say it achieves a linear rate. If $\rho = 0$, we say it achieves a superlinear rate. Generally, the analysis for the convergence rate usually needs some assumption on the mathematical properties of the loss function, such as convex and smooth. In the rest of this section, we first introduce gradient-based optimization methods and their convergence rate for convex losses, and then turn into the nonconvex situation.
+
+The most basic graident-based optimization method is the gradient descent (GD) algorithm. Formally, GD uses the first-order Taylor expansion to approximate the loss function at the current parameter $\theta_t$: $$\mathcal{L}(\theta) \approx \mathcal{L}(\theta_t) + \nabla \mathcal{L}(\theta_t)^\mathrm{T}(\theta - \theta_t).$$ The minimization then becomes a linear optimization problem with update rule: $$\theta_{t+1} = \theta_t - \eta \nabla \mathcal{L}(\theta_t),$$ where $\eta > 0$ is also known as the step size. If $\eta$ is small enough, then $\mathcal{L}(\theta_{t+1}) \le \mathcal{L}(\theta_{t})$.
+
+The main disadvantage of GD is that it can only handle unconstrained and differentiable problems. Projected subgradient methods address this issue by first using subgradient to surrogate the natural gradient and then guaranteeing constraints with projection. In detail, for a convex function $f$, we say $g$ is the subgradient of $f$ at $x \in \mathrm{dom} f$, if for arbitrary $y \in \mathrm{dom}f$, it satisfies $$f(y) \ge f(x) + g^\mathrm{T}(y - x).$$ For example, arbitrary $g \in [-1, 1]$ is the subgraident of $f(x) = |x|$ at $x = 0$. Note that the subgradient is a generalization of the gradient for convex functions. It is easy to prove that the subgradient is unique and equal to the natural gradient if the natural gradient exists.
+
+The Frank-Wolfe algorithm, also known as the conditional gradient method, improves the efficiency of projected subgradient methods by considering the constraints $\mathcal{W}$ within Taylor expansion: $$\theta_{t+1} = \arg\min_{\theta \in \mathcal{W}} \nabla\mathcal{L}(\theta_t)^\mathrm{T}\theta.$$ Moreover, the Frank-Wolfe algorithm also proposes to apply exponential smoothing when updating the parameter to imporve stability.
+
+\citet{nesterov1983method} provided a general acceleration method for smooth function, known as Nesterov acceleration, and further proved that GD with Nesterov acceleration achieves the fastest convergence rate in the first-order smooth functions optimization in theory. 
+
+\begin{center}
+\begin{tabular}{||c c c||} 
+\hline
+Algorithm & Assumption & Convergence Rate \\ [0.5ex] 
+\hline\hline
+GD & convex \& smooth & sublinear \\ 
+\hline
+GD & strong-convex \& smooth & linear \\
+\hline
+Projected subgradient & convex \& Lipschitz continuous & sublinear \\
+\hline
+Projected subgradient & convex \& smooth & sublinear \\
+\hline
+Projected subgradient & strong-convex \& smooth & linear \\
+\hline
+Frank-Wolfe & convex \& Lipschitz continuous & sublinear \\
+\hline
+Frank-Wolfe & convex \& smooth & sublinear \\
+\hline
+Frank-Wolfe & strong-convex \& smooth & linear \\
+\hline
+SGD & convex \& Lipschitz continuous & sublinear \\
+\hline
+\end{tabular}
+\end{center}
+
+Newton's method is a natural expansion of GD with second-order information: $$\mathcal{L}(\theta) \approx \mathcal{L}(\theta_t) + \nabla \mathcal{L}(\theta_t)^\mathrm{T}(\theta - \theta_t) + \frac{1}{2}(\theta-\theta_t)^\mathrm{T}\nabla^2\mathcal{L}(\theta_t)(\theta-\theta_t).$$ If the Hessian matrix $\nabla^2\mathcal{L}(\theta_t)$ is positive definite, then the approximation above is a convex function with the optimal solution $$\theta_{t+1} = \theta_t - [\nabla^2\mathcal{L}(\theta_t)]^{-1}\nabla\mathcal{L}(\theta_t).$$ Newton's method provides a more accurate step size adjustment and a faster convergence rate than first-order methods. However, it introduces more calculations and causes further issues: the Hessian matrix $\nabla^2\mathcal{L}(\theta_t)$ is expensive and not always positive definite. Quasi-Newton methods address these issues by constructing an iteratively updated postive definite matrix similar to the Hessian matrix as a replacement. Quasi-Newton methods such as BFGS and DFP are able to achieve the same convergence rate as Newton's method with good initialization.
+
+Stochastic gradient descent (SGD) is a stochastic approximation of GD that replaces the actual gradient from the entire dataset by the estimation from a randomly selected subset. SGD is extremely efficient for large-scale datasets. Similar to SGD, we can obtain a vanilla stochastic Quasi-Newton methods: $$\theta_{t+1} := \theta_t - \eta \tilde{H} \nabla\tilde{\mathcal{L}}(\theta_t),$$ where $\eta$ is the learning rate, the Hessian matrix $\tilde{H}$ and the gradient $\nabla\tilde{\mathcal{L}}$ are calculated on the subset of the data. However, this direct method will lead to high variance, which is harmful to the learning procedure. A similar issue also occurs in first-order stochastic optimization methods. There is a lot of research working on variance reduction methods for stochastic optimization, such as adding regularization~\citep{johnson2013accelerating,byrd2016stochastic}, or improving sampling strategy~\citep{needell2014stochastic,zhao2015stochastic}.
+
+So far we disscussed the convergence rate on convex assumption of the objective function. One of the difficulty in nonconvex analysis is to identify the global optimum. For derivate free optimization, it is common to consider the convergence of performance. Zero-order methods, such as cross entropy method and Bayesian optimization, demonstrate their efficiency in many nonconvex problems~\citep{rubinstein1999cross,wang2013bayesian}. For derivate based situations, it is common to consider a weak convergence condition: $$\min_{t=1,...,T}\mathbb{E}||\nabla\mathcal{L}(\theta)||^2 \rightarrow 0,$$ i.e., whether the learning algorithm can reach the zero-gradient stage during training. Note that the first-order stationary point may be a local minimum or a saddle point. \citet{lee2016gradient} proved that gradient descent with random initialization and appropriate step size does not converge to a saddle point. \citet{kawaguchi2016deep} showed that every local minimum of arbitrary deep linear neural network with the squared loss function is a global minimum with some assumptions on the training data.
+
+
+\bibliographystyle{plainnat}
+\bibliography{reference} 
+
+\end{document}

@@ -1,4 +1,4 @@
-Yanhua Huang is a machine learning engineer, working on large-scale machine learning and reinforcement learning in recommender systems.
+Yanhua Huang is a software engineer, working on large-scale machine learning and reinforcement learning in recommender systems.
 
 
 ### Posts
@@ -10,3 +10,4 @@ Yanhua Huang is a machine learning engineer, working on large-scale machine lear
 - [A Puzzle about Random Walk over the Circle](https://github.com/Officium/Officium.github.io/blob/master/posts/pdf/Feb%202019%20-%20A%20Puzzle%20about%20Random%20Walk%20over%20the%20Circle.pdf)
 - [A Fast Implementation of Max-Pooling](https://github.com/Officium/Officium.github.io/blob/master/posts/pdf/Oct%202019%20-%20A%20Fast%20Implementation%20of%20Max-Pooling.pdf)
 - [Coding Methods in Text Compression](https://github.com/Officium/Officium.github.io/blob/master/posts/pdf/Mar%202020%20-%20Coding%20Methods%20in%20Text%20Compression.pdf)
+- [Notes on the Theory of Machine Learning](https://github.com/Officium/Officium.github.io/blob/master/posts/pdf/Oct%202020%20-%20Notes%20on%20the%20Theory%20of%20Machine%20Learning.pdf)
