@@ -7,8 +7,8 @@ Yanhua Huang, Weikun Wang, Lei Zhang, Ruiwen Xu. "Sliding Spectrum Decomposition
 Hao Dong, Zihan Ding, Shanghang Zhang, Hang Yuan, Hongming Zhang, Jingqing Zhang, Yanhua Huang, Tianyang Yu, Huaqing Zhang, Ruitong Huang. "Deep Reinforcement Learning: Fundamentals, Research, and Applications". Springer Nature 2020
 
 
-### Posts
-- [Two Perspectives of PCA](https://github.com/Officium/Officium.github.io/blob/master/posts/pdf/Mar%202016%20-%20Two%20Perspectives%20of%20PCA.pdf)
+### TestPosts
+- [Two Perspectives of PCA](posts/pdf/Mar%202016%20-%20Two%20Perspectives%20of%20PCA.pdf)
 - [A Puzzle about Random Connection](https://github.com/Officium/Officium.github.io/blob/master/posts/pdf/Nov%202016%20-%20A%20Puzzle%20about%20Random%20Connection.pdf)
 - [From Maximum Entropy to Softmax](https://github.com/Officium/Officium.github.io/blob/master/posts/pdf/Jan%202017%20-%20From%20Maximum%20Entropy%20to%20Softmax.pdf)
 - [Trust Region](https://github.com/Officium/Officium.github.io/blob/master/posts/pdf/Jun%202018%20-%20Trust%20Region.pdf)
