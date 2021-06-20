@@ -1,4 +1,10 @@
-Yanhua Huang is a software engineer, working on large-scale machine learning and reinforcement learning in recommender systems.
+Yanhua Huang is a software engineer at [Xiaohongshu](https://www.xiaohongshu.com/?language=en-US), working on large-scale machine learning and reinforcement learning in recommender systems.
+
+### Publications
+
+Yanhua Huang, Weikun Wang, Lei Zhang, Ruiwen Xu. "Sliding Spectrum Decomposition for Diversified Recommendation". KDD 2021
+
+Hao Dong, Zihan Ding, Shanghang Zhang, Hang Yuan, Hongming Zhang, Jingqing Zhang, Yanhua Huang, Tianyang Yu, Huaqing Zhang, Ruitong Huang. "Deep Reinforcement Learning: Fundamentals, Research, and Applications". Springer Nature 2020
 
 
 ### Posts
