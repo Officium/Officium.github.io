@@ -12,7 +12,6 @@ Hao Dong, Zihan Ding, Shanghang Zhang, Hang Yuan, Hongming Zhang, Jingqing Zhang
 - [A Puzzle about Random Connection](posts/pdf/Nov 2016 - A Puzzle about Random Connection.pdf)
 - [From Maximum Entropy to Softmax](posts/pdf/Jan 2017 - From Maximum Entropy to Softmax.pdf)
 - [Trust Region](posts/pdf/Jun 2018 - Trust Region.pdf)
-- [Why does Rejection Sampling Make Sense](posts/pdf/Aug 2018 - Why does Rejection Sampling Make Sense.pdf)
 - [A Puzzle about Random Walk over the Circle](posts/pdf/Feb 2019 - A Puzzle about Random Walk over the Circle.pdf)
 - [A Fast Implementation of Max-Pooling](posts/pdf/Oct 2019 - A Fast Implementation of Max-Pooling.pdf)
 - [Coding Methods in Text Compression](posts/pdf/Mar 2020 - Coding Methods in Text Compression.pdf)
