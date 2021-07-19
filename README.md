@@ -2,9 +2,9 @@ Yanhua Huang is a software engineer at [Xiaohongshu](https://www.xiaohongshu.com
 
 ### Publications
 
-Yanhua Huang, Weikun Wang, Lei Zhang, Ruiwen Xu. "Sliding Spectrum Decomposition for Diversified Recommendation". KDD 2021
+**Sliding Spectrum Decomposition for Diversified Recommendation**<br>Yanhua Huang, Weikun Wang, Lei Zhang, Ruiwen Xu<br>KDD 2021 [pdf](https://arxiv.org/pdf/2107.05204.pdf)
 
-Hao Dong, Zihan Ding, Shanghang Zhang, Hang Yuan, Hongming Zhang, Jingqing Zhang, Yanhua Huang, Tianyang Yu, Huaqing Zhang, Ruitong Huang. "Deep Reinforcement Learning: Fundamentals, Research, and Applications". Springer Nature 2020
+**Deep Reinforcement Learning: Fundamentals, Research, and Applications**<br>Hao Dong, Zihan Ding, Shanghang Zhang, Hang Yuan, Hongming Zhang, Jingqing Zhang, Yanhua Huang, Tianyang Yu, Huaqing Zhang, Ruitong Huang<br>Springer Nature 2020 [link](https://deepreinforcementlearningbook.org/)
 
 
 ### Posts
