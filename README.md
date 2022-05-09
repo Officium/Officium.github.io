@@ -2,6 +2,8 @@ Yanhua Huang is a software engineer at [Xiaohongshu](https://www.xiaohongshu.com
 
 ### Publications
 
+**Neural Statistics for Click-Through Rate Prediction**<br>Yanhua Huang*, Hangyu Wang*, Yiyun Miao, Ruiwen Xu, Lei Zhang, Weinan Zhang<br> SIGIR 2022
+
 **Efficient Reinforcement Learning Development with RLzoo**<br>Zihan Ding, Tianyang Yu, Hongming Zhang, Yanhua Huang, Guo Li, Quancheng Guo, Luo Mai, Hao Dong<br>ACM MM 2021 Open Source Competition [\[Paper\]](https://arxiv.org/pdf/2009.08644.pdf)
 
 **Sliding Spectrum Decomposition for Diversified Recommendation**<br>Yanhua Huang, Weikun Wang, Lei Zhang, Ruiwen Xu<br>KDD 2021 [\[Paper\]](https://arxiv.org/pdf/2107.05204.pdf)
