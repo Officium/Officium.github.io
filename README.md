@@ -1,4 +1,4 @@
-Yanhua Huang is a software engineer at [Xiaohongshu](https://www.xiaohongshu.com/en), working on large-scale machine learning and reinforcement learning in recommender systems.
+Yanhua Huang is a tech manager at [Xiaohongshu](https://www.xiaohongshu.com/en), working on large-scale machine learning in recommender systems. We are hiring interns and full-time engineers in Shanghai and Beijing, with backgrounds in pre-training, multi-modal learning, reinforcement learning, retrieval, ranking, and deep learning system. If you are interested, please feel free to contact yanhuahuang [at] xiaohongshu [dot] com.
 
 ### Publications
 
@@ -16,3 +16,6 @@ Yanhua Huang is a software engineer at [Xiaohongshu](https://www.xiaohongshu.com
 - [Trust Region](posts/pdf/Jun 2018 - Trust Region.pdf)
 - [Coding Methods in Text Compression](posts/pdf/Mar 2020 - Coding Methods in Text Compression.pdf)
 - [Notes on the Theory of Machine Learning](posts/pdf/Oct 2020 - Notes on the Theory of Machine Learning.pdf)
+
+### Open Source Contributions
+[PyTorch](https://github.com/pytorch/pytorch), [TensorFlow](https://github.com/tensorflow/tensorflow), [RLZoo](https://github.com/tensorlayer/RLzoo)
