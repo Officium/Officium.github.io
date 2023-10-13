@@ -1,4 +1,4 @@
-Yanhua Huang is a tech manager at [Xiaohongshu](https://www.xiaohongshu.com/en), working on large-scale machine learning in recommender systems. We are hiring interns and full-time engineers in Shanghai and Beijing, with backgrounds in pre-training, multi-modal learning, reinforcement learning, retrieval, ranking, and deep learning system. If you are interested, please feel free to contact yanhuahuang [at] xiaohongshu [dot] com.
+Yanhua Huang is a senior staff engineer and manager, powering major products at [Xiaohongshu](https://www.xiaohongshu.com/en) such as ads and recommendation via innovations in AI and ML. We are hiring interns and full-time engineers in Shanghai and Beijing, with backgrounds in multi-modal pre-training, reinforcement learning, retrieval & ranking, and deep learning system. If you are interested, please feel free to contact yanhuahuang [at] xiaohongshu [dot] com.
 
 ### Publications
 
