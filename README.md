@@ -1,4 +1,6 @@
-Yanhua Huang is a senior staff engineer and manager, powering major products at [Xiaohongshu](https://www.xiaohongshu.com/en) such as ads and recommendation via innovations in AI and ML. We are hiring interns and full-time engineers in Shanghai and Beijing, with backgrounds in multi-modal pre-training, reinforcement learning, retrieval & ranking, and deep learning system. If you are interested, please feel free to contact yanhuahuang [at] xiaohongshu [dot] com.
+Presently, Yanhua leads the base model team at [Xiaohongshu](https://www.xiaohongshu.com/en), powering ads and recommendation via innovations in AI and ML. We are hiring interns and full-time engineers in Shanghai and Beijing, with backgrounds in multi-modal learning, applied artificial intelligent, retrieval, ranking, and deep learning system. If you are interested, please feel free to contact yanhuahuang [at] xiaohongshu [dot] com.
+
+Yanhua目前是小红书基础模型组的负责人，通过AI/ML技术为公司的推荐和广告业务赋能。我们目前开放了多模态、AI应用、召回、排序和深度学习系统等方面的HC，实习和全职均可，base地可选北京或上海。
 
 ### Publications
 
