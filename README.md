@@ -4,6 +4,8 @@ Yanhua目前是小红书基础模型组的负责人，通过AI/ML技术为公司
 
 ### Publications
 
+**AlignRec: Aligning and Training in Multimodal Recommendations**<br>Yifan Liu\*, Kangning Zhang\*, Xiangyuan Ren, Yanhua Huang, Jiarui Jin, Yingjie Qin, Ruilong Su, Ruiwen Xu, Weinan Zhang<br> CIKM 2024
+
 **Neural Statistics for Click-Through Rate Prediction**<br>Yanhua Huang\*, Hangyu Wang\*, Yiyun Miao, Ruiwen Xu, Lei Zhang, Weinan Zhang<br> SIGIR 2022 [\[Paper\]](https://dl.acm.org/doi/10.1145/3477495.3531762)
 
 **Efficient Reinforcement Learning Development with RLzoo**<br>Zihan Ding, Tianyang Yu, Hongming Zhang, Yanhua Huang, Guo Li, Quancheng Guo, Luo Mai, Hao Dong<br>ACM Multimedia 2021 Open Source Competition [\[Paper\]](https://arxiv.org/pdf/2009.08644.pdf)
