@@ -1,10 +1,8 @@
-Presently, Yanhua leads the base model team at [Xiaohongshu](https://www.xiaohongshu.com/en), powering ads and recommendation via innovations in AI and ML. We are hiring interns and full-time engineers in Shanghai and Beijing, with backgrounds in multi-modal learning, applied artificial intelligent, retrieval, ranking, and deep learning system. If you are interested, please feel free to contact yanhuahuang [at] xiaohongshu [dot] com.
-
-Yanhua目前是小红书基础模型组的负责人，通过AI/ML技术为公司的推荐和广告业务赋能。我们目前开放了多模态、AI应用、召回、排序和深度学习系统等方面的HC，实习和全职均可，base地可选北京或上海。
+Presently, Yanhua leads the multi-modal recommendation and rankGPT at [Xiaohongshu](https://www.xiaohongshu.com/en), powering ads and recommendation via innovations in AI and ML.
 
 ### Publications
 
-**AlignRec: Aligning and Training in Multimodal Recommendations**<br>Yifan Liu\*, Kangning Zhang\*, Xiangyuan Ren, Yanhua Huang, Jiarui Jin, Yingjie Qin, Ruilong Su, Ruiwen Xu, Weinan Zhang<br> CIKM 2024
+**AlignRec: Aligning and Training in Multimodal Recommendations**<br>Yifan Liu\*, Kangning Zhang\*, Xiangyuan Ren, Yanhua Huang, Jiarui Jin, Yingjie Qin, Ruilong Su, Ruiwen Xu, Yong Yu, Weinan Zhang<br> CIKM 2024
 
 **Neural Statistics for Click-Through Rate Prediction**<br>Yanhua Huang\*, Hangyu Wang\*, Yiyun Miao, Ruiwen Xu, Lei Zhang, Weinan Zhang<br> SIGIR 2022 [\[Paper\]](https://dl.acm.org/doi/10.1145/3477495.3531762)
 
