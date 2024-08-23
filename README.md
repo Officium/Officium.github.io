@@ -1,4 +1,4 @@
-Presently, Yanhua leads the multi-modal recommendation and RankGPT project at [Xiaohongshu](https://www.xiaohongshu.com/en), powering ads and recommendation via innovations in AI and ML. Previously, Yanhua served as the tech lead of Xiaohongshu's feed ads model team (Apr 2022\~Mar 2023), senior ML engineer working on the ranking module of Xiaohongshu's Explore Feed (Oct 2019\~Mar 2022), and senior computer vision engineer in Baidu MEG (Dec 2017\~Oct 2019).
+Presently, Yanhua leads the multi-modal recommendation and RankGPT project at [Xiaohongshu](https://www.xiaohongshu.com/en), powering ads and recommendations via innovations in AI and ML. Previously, Yanhua served as the tech lead of Xiaohongshu's feed ads model team (from Apr 2022 to Mar 2023), senior ML engineer working on the ranking module of Xiaohongshu's Explore Feed (from Oct 2019 to Mar 2022), and senior computer vision engineer in Baidu MEG (from Dec 2017 to Oct 2019).
 
 ### Publications
 
