@@ -2,9 +2,12 @@ Presently, Yanhua leads the multi-modal recommendation and RankGPT project at [X
 
 ### Publications
 
-**AlignRec: Aligning and Training in Multimodal Recommendations**<br>Yifan Liu\*, Kangning Zhang\*, Xiangyuan Ren, Yanhua Huang, Jiarui Jin, Yingjie Qin, Ruilong Su, Ruiwen Xu, Yong Yu, Weinan Zhang<br> CIKM 2024
+**Harmonized Speculative Sampling**<br>Lefan Zhang, Xiaodan Wang, Yanhua Huang, Ruiwen Xu<br> arXiv:2408.15766 [\[Paper\]](https://arxiv.org/pdf/2408.15766)
 
-**Neural Statistics for Click-Through Rate Prediction**<br>Yanhua Huang\*, Hangyu Wang\*, Yiyun Miao, Ruiwen Xu, Lei Zhang, Weinan Zhang<br> SIGIR 2022 [\[Paper\]](https://dl.acm.org/doi/10.1145/3477495.3531762)
+
+**AlignRec: Aligning and Training in Multimodal Recommendations**<br>Yifan Liu\*, Kangning Zhang\*, Xiangyuan Ren, Yanhua Huang, Jiarui Jin, Yingjie Qin, Ruilong Su, Ruiwen Xu, Yong Yu, Weinan Zhang<br> CIKM 2024 [\[Paper\]](https://arxiv.org/pdf/2403.12384)
+
+**Neural Statistics for Click-Through Rate Prediction**<br>Yanhua Huang\*, Hangyu Wang\*, Yiyun Miao, Ruiwen Xu, Lei Zhang, Weinan Zhang<br> SIGIR 2022 [\[Paper\]](https://web.archive.org/web/20220709042026id_/https://dl.acm.org/doi/pdf/10.1145/3477495.3531762)
 
 **Efficient Reinforcement Learning Development with RLzoo**<br>Zihan Ding, Tianyang Yu, Hongming Zhang, Yanhua Huang, Guo Li, Quancheng Guo, Luo Mai, Hao Dong<br>ACM Multimedia 2021 Open Source Competition [\[Paper\]](https://arxiv.org/pdf/2009.08644.pdf)
 
