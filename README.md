@@ -2,7 +2,7 @@ Presently, Yanhua leads the RankGPT project at [Xiaohongshu](https://www.xiaohon
 
 ### Publications
 
-**Learning Harmonized Representations for Speculative Sampling**<br>Lefan Zhang, Xiaodan Wang, Yanhua Huang, Ruiwen Xu<br> arXiv:2408.15766 [\[Paper\]](https://arxiv.org/pdf/2408.15766)
+**Learning Harmonized Representations for Speculative Sampling**<br>Lefan Zhang, Xiaodan Wang, Yanhua Huang, Ruiwen Xu<br> ICLR 2025 [\[Paper\]](https://arxiv.org/pdf/2408.15766)
 
 **AlignRec: Aligning and Training in Multimodal Recommendations**<br>Yifan Liu\*, Kangning Zhang\*, Xiangyuan Ren, Yanhua Huang, Jiarui Jin, Yingjie Qin, Ruilong Su, Ruiwen Xu, Yong Yu, Weinan Zhang<br> CIKM 2024 [\[Paper\]](https://arxiv.org/pdf/2403.12384)
 
