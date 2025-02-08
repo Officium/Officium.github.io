@@ -1,8 +1,8 @@
-Presently, Yanhua leads the RankGPT project at [Xiaohongshu](https://www.xiaohongshu.com/en), powering ads and recommendations via MLLMs. Previously, Yanhua served as the tech lead of Xiaohongshu's feed ads model team (from Apr 2022 to Mar 2023), senior ML engineer working on the ranking module of Xiaohongshu's Explore Feed (from Oct 2019 to Mar 2022), and senior computer vision engineer in Baidu MEG (from Dec 2017 to Oct 2019).
+I am now at [Xiaohongshu](https://www.xiaohongshu.com/en), leading projects about rethinking recommender system by GenAI. 
 
 ### Publications
 
-**Learning Harmonized Representations for Speculative Sampling**<br>Lefan Zhang, Xiaodan Wang, Yanhua Huang, Ruiwen Xu<br> ICLR 2025 [\[Paper\]](https://arxiv.org/pdf/2408.15766)
+**Learning Harmonized Representations for Speculative Sampling**<br>Lefan Zhang, Xiaodan Wang, Yanhua Huang, Ruiwen Xu<br> ICLR 2025 [\[Paper\]](https://arxiv.org/pdf/2408.15766)  [\[Code\]](https://github.com/HArmonizedSS/HASS)
 
 **AlignRec: Aligning and Training in Multimodal Recommendations**<br>Yifan Liu\*, Kangning Zhang\*, Xiangyuan Ren, Yanhua Huang, Jiarui Jin, Yingjie Qin, Ruilong Su, Ruiwen Xu, Yong Yu, Weinan Zhang<br> CIKM 2024 [\[Paper\]](https://arxiv.org/pdf/2403.12384)
 
@@ -24,5 +24,5 @@ Presently, Yanhua leads the RankGPT project at [Xiaohongshu](https://www.xiaohon
 ### Open Source Contributions
 [PyTorch](https://github.com/pytorch/pytorch), [TensorFlow](https://github.com/tensorflow/tensorflow), [RLZoo](https://github.com/tensorlayer/RLzoo)
 
-### Academic services
+### Academic Services
 PC Member of WWW 2022, Reviewer of WWW 2023, KDD 2025, and ICLR 2025.
