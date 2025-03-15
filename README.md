@@ -1,8 +1,8 @@
-I am now at [Xiaohongshu](https://www.xiaohongshu.com/en), leading projects about rethinking recommender system by GenAI. 
+Currently, I lead the generative recommendation project at [Xiaohongshu](https://www.xiaohongshu.com/en). We achieve this goal by rethinking the recommender paradigm using GenAI techniques or employing MLLMs to enhance the current paradigm. 
 
 ### Publications
 
-**Learning Harmonized Representations for Speculative Sampling**<br>Lefan Zhang, Xiaodan Wang, Yanhua Huang, Ruiwen Xu<br> ICLR 2025 [\[Paper\]](https://arxiv.org/pdf/2408.15766)  [\[Code\]](https://github.com/HArmonizedSS/HASS)
+**Learning Harmonized Representations for Speculative Sampling**<br>Lefan Zhang, Xiaodan Wang, Yanhua Huang, Ruiwen Xu<br> ICLR 2025 [\[Paper\]](https://arxiv.org/pdf/2408.15766)  [\[Code\]](https://github.com/HArmonizedSS/HASS) [\[Weight\]](https://huggingface.co/HArmonizedSS) 
 
 **AlignRec: Aligning and Training in Multimodal Recommendations**<br>Yifan Liu\*, Kangning Zhang\*, Xiangyuan Ren, Yanhua Huang, Jiarui Jin, Yingjie Qin, Ruilong Su, Ruiwen Xu, Yong Yu, Weinan Zhang<br> CIKM 2024 [\[Paper\]](https://arxiv.org/pdf/2403.12384)
 
