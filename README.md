@@ -2,6 +2,8 @@ Currently, I lead the generative recommendation project at [Xiaohongshu](https:/
 
 ### Publications
 
+**Towards Large-scale Generative Ranking**<br>Yanhua Huang, Yuqi Chen, Xiong Cao, Rui Yang, Mingliang Qi, Yinghao Zhu, Qingchang Han, Yaowei Liu, Zhaoyu Liu, Xuefeng Yao, Yuting Jia, Leilei Ma, Yinqi Zhang, Taoyu Zhu, Liujie Zhang, Lei Chen, Weihang Chen, Min Zhu, Ruiwen Xu, Lei Zhang<br> Technical Report [\[Paper\]](https://arxiv.org/pdf/2505.04180)
+
 **Learning Harmonized Representations for Speculative Sampling**<br>Lefan Zhang, Xiaodan Wang, Yanhua Huang, Ruiwen Xu<br> ICLR 2025 [\[Paper\]](https://arxiv.org/pdf/2408.15766)  [\[Code\]](https://github.com/HArmonizedSS/HASS) [\[Weight\]](https://huggingface.co/HArmonizedSS) 
 
 **AlignRec: Aligning and Training in Multimodal Recommendations**<br>Yifan Liu\*, Kangning Zhang\*, Xiangyuan Ren, Yanhua Huang, Jiarui Jin, Yingjie Qin, Ruilong Su, Ruiwen Xu, Yong Yu, Weinan Zhang<br> CIKM 2024 [\[Paper\]](https://arxiv.org/pdf/2403.12384)
@@ -25,4 +27,5 @@ Currently, I lead the generative recommendation project at [Xiaohongshu](https:/
 [PyTorch](https://github.com/pytorch/pytorch), [TensorFlow](https://github.com/tensorflow/tensorflow), [RLZoo](https://github.com/tensorlayer/RLzoo)
 
 ### Academic Services
-PC Member of WWW 2022, Reviewer of WWW 2023, KDD 2025, and ICLR 2025.
+Reviewer of WWW/KDD/ICLR/SIGIR; Contributor of PyTorch/TensorFlow/TensorLayer.
+
