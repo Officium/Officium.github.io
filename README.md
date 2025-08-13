@@ -2,6 +2,8 @@ Currently, I lead the generative recommendation project at [Xiaohongshu](https:/
 
 ### Publications
 
+**A Metric for MLLM Alignment in Large-scale Recommendation**<br>Yubin Zhang\*, **Yanhua Huang**\*, Haiming Xu, Mingliang Qi, Chang Wang, Jiarui Jin, Xiangyuan Ren, Xiaodan Wang, Ruiwen Xu<br> Preprint. Under Review <br>[\[Paper\]](https://arxiv.org/pdf/2508.04963) 
+
 **Towards Large-scale Generative Ranking**<br>**Yanhua Huang**, Yuqi Chen, Xiong Cao, Rui Yang, Mingliang Qi, Yinghao Zhu, Qingchang Han, Yaowei Liu, Zhaoyu Liu, Xuefeng Yao, Yuting Jia, Leilei Ma, Yinqi Zhang, Taoyu Zhu, Liujie Zhang, Lei Chen, Weihang Chen, Min Zhu, Ruiwen Xu, Lei Zhang<br> KDD 2025 (The 2nd workshop on GenAI for RecSys and Personalization) <br>[\[Paper\]](https://arxiv.org/pdf/2505.04180) 
 
 **Learning Harmonized Representations for Speculative Sampling**<br>Lefan Zhang, Xiaodan Wang, **Yanhua Huang**, Ruiwen Xu<br> ICLR 2025 <br>[\[Paper\]](https://arxiv.org/pdf/2408.15766)  [\[Code\]](https://github.com/HArmonizedSS/HASS) [\[Weight\]](https://huggingface.co/HArmonizedSS) 
@@ -29,5 +31,5 @@ Currently, I lead the generative recommendation project at [Xiaohongshu](https:/
 ### Others
 - Open Source Contributions: [PyTorch](https://github.com/pytorch/pytorch), [TensorFlow](https://github.com/tensorflow/tensorflow), [RLZoo](https://github.com/tensorlayer/RLzoo)
 
-- Academic Services: Reviewer of WWW/KDD/ICLR/SIGIR
+- Academic Services: Reviewer of WWW/KDD/ICLR/SIGIR/WSDM
 
