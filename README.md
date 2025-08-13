@@ -1,4 +1,4 @@
-Currently, I lead the generative recommendation project at [Xiaohongshu](https://www.xiaohongshu.com/en). We achieve this goal by rethinking the recommender paradigm using GenAI techniques or employing MLLMs to enhance the current paradigm. 
+Yanhua Huang is currently a tech lead at [Xiaohongshu](https://www.xiaohongshu.com/en), working on generative and multimodal recommendation. His research focuses on large-scale machine learning. He has published papers in top-tier conference proccedings, including KDD, ICLR, and SIGIR. Before Xiaohongshu, he spent two years at Baidu for Feed recommendation and four years at East China Normal University for his Bachelor's degree in the Department of Mathematics.
 
 ### Publications
 
