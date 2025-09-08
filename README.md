@@ -1,10 +1,12 @@
-Yanhua Huang is currently a tech lead at [Xiaohongshu](https://www.xiaohongshu.com/en), working on generative and multimodal recommendation. His research focuses on large-scale machine learning. He has published papers in top-tier conference proccedings, including KDD, ICLR, and SIGIR. Before Xiaohongshu, he spent two years at Baidu for Feed recommendation and four years at East China Normal University for his Bachelor's degree in the Department of Mathematics.
+Yanhua Huang is currently a tech lead at [Xiaohongshu](https://www.xiaohongshu.com/en), working on generative and multimodal recommendation. His focus is on large-scale machine learning for recommender systems. He has published papers in top-tier conference proccedings, including KDD, ICLR, and SIGIR. Before Xiaohongshu, he spent two years at Baidu for Feed recommendation and four years at East China Normal University for his Bachelor's degree in the Department of Mathematics.
 
 ### Publications
 
-**A Metric for MLLM Alignment in Large-scale Recommendation**<br>Yubin Zhang\*, **Yanhua Huang**\*, Haiming Xu, Mingliang Qi, Chang Wang, Jiarui Jin, Xiangyuan Ren, Xiaodan Wang, Ruiwen Xu<br> Preprint. Under Review <br>[\[Paper\]](https://arxiv.org/pdf/2508.04963) 
+**A Metric for MLLM Alignment in Large-scale Recommendation**<br>Yubin Zhang\*, **Yanhua Huang**\*, Haiming Xu, Mingliang Qi, Chang Wang, Jiarui Jin, Xiangyuan Ren, Xiaodan Wang, Ruiwen Xu<br> RecSys 2025 Workshop on Evaluating and Applying RecSys with LLMs <br>[\[Paper\]](https://arxiv.org/pdf/2508.04963) 
 
-**Towards Large-scale Generative Ranking**<br>**Yanhua Huang**, Yuqi Chen, Xiong Cao, Rui Yang, Mingliang Qi, Yinghao Zhu, Qingchang Han, Yaowei Liu, Zhaoyu Liu, Xuefeng Yao, Yuting Jia, Leilei Ma, Yinqi Zhang, Taoyu Zhu, Liujie Zhang, Lei Chen, Weihang Chen, Min Zhu, Ruiwen Xu, Lei Zhang<br> KDD 2025 (The 2nd workshop on GenAI for RecSys and Personalization) <br>[\[Paper\]](https://arxiv.org/pdf/2505.04180) 
+**Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units**<br>Chao Hao, Zezheng Wang, **Yanhua Huang**, Ruiwen Xu, Wenzhe Niu, Xin Liu, Zitong Yu<br> EMNLP 2025 <br>[\[Paper\]](https://arxiv.org/pdf/2508.18763)
+
+**Towards Large-scale Generative Ranking**<br>**Yanhua Huang**, Yuqi Chen, Xiong Cao, Rui Yang, Mingliang Qi, Yinghao Zhu, Qingchang Han, Yaowei Liu, Zhaoyu Liu, Xuefeng Yao, Yuting Jia, Leilei Ma, Yinqi Zhang, Taoyu Zhu, Liujie Zhang, Lei Chen, Weihang Chen, Min Zhu, Ruiwen Xu, Lei Zhang<br> KDD 2025 Workshop on GenAI for RecSys and Personalization <br>[\[Paper\]](https://arxiv.org/pdf/2505.04180) 
 
 **Learning Harmonized Representations for Speculative Sampling**<br>Lefan Zhang, Xiaodan Wang, **Yanhua Huang**, Ruiwen Xu<br> ICLR 2025 <br>[\[Paper\]](https://arxiv.org/pdf/2408.15766)  [\[Code\]](https://github.com/HArmonizedSS/HASS) [\[Weight\]](https://huggingface.co/HArmonizedSS) 
 
