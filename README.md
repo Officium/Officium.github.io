@@ -1,4 +1,4 @@
-Yanhua Huang is currently a tech lead at [Xiaohongshu](https://www.xiaohongshu.com/en), working on generative and multimodal recommendation. His focus is on large-scale machine learning for recommender systems. He has published papers in top-tier conference proccedings, including KDD, ICLR, and SIGIR. Before Xiaohongshu, he spent two years at Baidu for Feed recommendation and four years at East China Normal University for his Bachelor's degree in the Department of Mathematics.
+Yanhua's focus is on large-scale machine learning for recommender systems. He has published papers in top-tier conference proceedings, including KDD, ICLR, and SIGIR, with a total of 1,000+ [Google Scholar](https://scholar.google.com/citations?user=VS4vZJkAAAAJ&hl=en) citations. Previously, Yanhua led the base model team at [Xiaohongshu](https://www.xiaohongshu.com/en), working on generative and multimodal recommendation. Before that, he spent two years at Baidu on Feed recommendation and four years at East China Normal University earning his Bachelor's degree in the Department of Mathematics.
 
 ### Publications
 
@@ -7,6 +7,8 @@ Yanhua Huang is currently a tech lead at [Xiaohongshu](https://www.xiaohongshu.c
 **Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units**<br>Chao Hao, Zezheng Wang, **Yanhua Huang**, Ruiwen Xu, Wenzhe Niu, Xin Liu, Zitong Yu<br> EMNLP 2025 <br>[\[Paper\]](https://arxiv.org/pdf/2508.18763)
 
 **Towards Large-scale Generative Ranking**<br>**Yanhua Huang**, Yuqi Chen, Xiong Cao, Rui Yang, Mingliang Qi, Yinghao Zhu, Qingchang Han, Yaowei Liu, Zhaoyu Liu, Xuefeng Yao, Yuting Jia, Leilei Ma, Yinqi Zhang, Taoyu Zhu, Liujie Zhang, Lei Chen, Weihang Chen, Min Zhu, Ruiwen Xu, Lei Zhang<br> KDD 2025 Workshop on GenAI for RecSys and Personalization <br>[\[Paper\]](https://arxiv.org/pdf/2505.04180) 
+
+**SEARA: An Automated Approach for Obtaining Optimal Retrievers**<br>Yuheng Zou, Yiran Wang, Yuzhu Tian, Min Zhu, **Yanhua Huang**<br> EMNLP 2025 <br>[\[Paper\]](https://aclanthology.org/2025.emnlp-industry.67.pdf)
 
 **Learning Harmonized Representations for Speculative Sampling**<br>Lefan Zhang, Xiaodan Wang, **Yanhua Huang**, Ruiwen Xu<br> ICLR 2025 <br>[\[Paper\]](https://arxiv.org/pdf/2408.15766)  [\[Code\]](https://github.com/HArmonizedSS/HASS) [\[Weight\]](https://huggingface.co/HArmonizedSS) 
 
